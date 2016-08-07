@@ -14,7 +14,7 @@ var options = {
 };
 //initialize the express framework
 var app = express();
-http.createServer(app).listen(3001, function(){
+https.createServer(options, app).listen(3001, function(){
     console.log('Server started and listening on localhost:3001');
 });
 app.use(function(req, res, next) {

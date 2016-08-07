@@ -17,7 +17,14 @@ var Todo = [
         title:"Homework",
         content:"I've got a lot todo today!"
     }
-]
+];
 
+function addTodo(old,newtd){
+    if(newtd != null)
+    return [].concat(old,newtd);
+    else return old;
+}
+
+exports.addTodo = addTodo;
 exports.user = User;
 exports.todo = Todo;

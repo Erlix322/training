@@ -1,6 +1,7 @@
 //including libraries
 var express = require('express');
 var https = require('https');
+var http = require('http');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var data = require('./data/data.js');
@@ -13,9 +14,15 @@ var options = {
 };
 //initialize the express framework
 var app = express();
-https.createServer(options, app).listen(3000, function(){
-    console.log('Server started and listening on localhost:3000');
+http.createServer(app).listen(3001, function(){
+    console.log('Server started and listening on localhost:3001');
 });
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 //apply logger to /user route
 app.use('/user',function(req,res,next){
     console.log("Request on /user");

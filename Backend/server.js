@@ -8,13 +8,13 @@ var data = require('./data/data.js');
 
 //loading server key and certificate to 
 //establish TLS connections later on
-var options = {
+/*var options = {
     key: fs.readFileSync('server.key'),
     cert: fs.readFileSync('server.crt')
-};
+};*/
 //initialize the express framework
 var app = express();
-https.createServer(options, app).listen(3001, function(){
+http.createServer(app).listen(52512, function(){
     console.log('Server started and listening on localhost:3001');
 });
 app.use(function(req, res, next) {
@@ -38,6 +38,14 @@ app.get('/user',function (req,res) {
 })
 
 app.get('/todo',function(req,res){
+    res.send(data.todo);
+})
+
+app.post('/delete',function(req,res){
+    console.log(req.body);
+    data.todo = data.todo.filter((x,i,todo) => {
+        return x.id != req.body.id;
+    });
     res.send(data.todo);
 })
 

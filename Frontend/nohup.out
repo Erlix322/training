@@ -1,0 +1,40 @@
+
+> Frontend@0.0.1 start /home/alf/Node/React/training/Frontend
+> react-scripts start
+
+cStarting the development server...
+
+cCompiled with warnings.
+
+Warning in ./src/components/ListElement.js
+
+/home/alf/Node/React/training/Frontend/src/components/ListElement.js
+  6:22  warning  'id' is defined but never used    no-unused-vars
+  6:25  warning  'last' is defined but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+You may use special comments to disable some warnings.
+Use // eslint-disable-next-line to ignore the next line.
+Use /* eslint-disable */ to ignore all warnings in a file.
+
+> Frontend@0.0.1 start /home/alf/Node/React/training/Frontend
+> react-scripts start
+
+cStarting the development server...
+
+cCompiled with warnings.
+
+Warning in ./src/components/ListElement.js
+
+/home/alf/Node/React/training/Frontend/src/components/ListElement.js
+  6:22  warning  'id' is defined but never used    no-unused-vars
+  6:25  warning  'last' is defined but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+You may use special comments to disable some warnings.
+Use // eslint-disable-next-line to ignore the next line.
+Use /* eslint-disable */ to ignore all warnings in a file.

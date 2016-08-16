@@ -15,7 +15,22 @@ var Todo = [
     {
         id:1,
         title:"Homework",
-        content:"I've got a lot todo today!"
+        content:"Awww man!!"
+    },
+    {
+        id:2,
+        title:"Learning",
+        content:"Roasted!!"
+    },
+    {
+        id:3,
+        title:"Shopping",
+        content:"Yeah, a new game!"
+    },
+    {
+        id:4,
+        title:"Wasting",
+        content:"I think I'm totally wasted!!"
     }
 ];
 

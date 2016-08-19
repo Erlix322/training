@@ -1,5 +1,8 @@
-#Entwicklung einer SaaS - Anwendung
+#TODO as a Service
 
-[huhu]: https://github.com/Erlix322/training/blob/master/architecture.png
+![alt text][logo]
+[logo]: https://github.com/Erlix322/training/blob/master/architecture.png
 
+#Ziel
+Aufbau einer einfachen SaaS - Anwendung zur Einarbeitung in das Themengebiet moderner Webarchitekturen.
 

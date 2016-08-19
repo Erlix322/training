@@ -1,1 +1,3 @@
-# Workshop BSZ-Annaberg "Entwicklung einer SaaS - Anwendung"
+#Entwicklung einer SaaS - Anwendung
+
+

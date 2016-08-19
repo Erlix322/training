@@ -1,4 +1,4 @@
-#TODO as a Service
+#ToDo as a Service
 
 ![alt text][logo]
 [logo]: https://github.com/Erlix322/training/blob/master/architecture.png
@@ -19,6 +19,18 @@ http://twin322.hopto.org/
 Vorbereitende Maßnahmen und Informationen könnt ihr der folgenden Website entnehmen: http://twin322.hopto.org/  
 Weitere Instruktionen folgen während der Übung.
 
+#REST-api
+Die REST-API ermöglicht den Zugriff auf die jeweiligen Daten und die Manipulation derselben.
+**Funktionen** 
+Anzeige der Gespeicherten ToDos
+> http://<yourhost>:<yourport>/todo  
+
+Speichern einer neuen todo
+> http://<yourhost>:<yourport>/todo Body = {title:"your title", content:"your content"}
+
+#Frontend
+Zur Erstellung des Frontends wird Facebooks React benutzt.
+React bietet eine umfangreiche Bibliothek zur Erstellung von Komponentenbasierten Webanwendungen.
 
  
 

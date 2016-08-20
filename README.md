@@ -23,10 +23,10 @@ Weitere Instruktionen folgen während der Übung.
 Die REST-API ermöglicht den Zugriff auf die jeweiligen Daten und die Manipulation derselben.
 **Funktionen** 
 Anzeige der Gespeicherten ToDos
-> http://<yourhost>:<yourport>/todo  
+> http://\<yourhost\>:\<yourport\>/todo  
 
 Speichern einer neuen todo
-> http://<yourhost>:<yourport>/todo Body = {title:"your title", content:"your content"}
+> http://\<yourhost\>:\<yourport\>/todo Body = {title:"your title", content:"your content"}
 
 #Frontend
 Zur Erstellung des Frontends wird Facebooks React benutzt.

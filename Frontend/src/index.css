@@ -3,9 +3,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: -webkit-linear-gradient(bottom,mediumseagreen,green);
-  background: -o-linear-gradient(bottom,mediumseagreen,green);
-  background: linear-gradient(bottom,mediumseagreen,green);
+  background: -webkit-linear-gradient(mediumseagreen,green);
+  background: -o-linear-gradient(mediumseagreen,green);
+  background: linear-gradient(mediumseagreen,green);
   
 }
 html{height: 100%;}

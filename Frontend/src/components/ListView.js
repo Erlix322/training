@@ -15,6 +15,7 @@ class ListView extends Component {
                                 item={x}
                           />;
                })}
+               <button onClick={this.props.addItem}>ADD NEW ITEM</button>
                
             </div>
         );

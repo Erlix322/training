@@ -22,5 +22,8 @@ export function sendJson(method,path,payload){
            'Accept': 'application/json',
            'Content-Type' : 'application/json'
        }
-   }).then(response => response.json());
+   }).then(response => response.json())
+   .catch(e => {
+        console.log("Failed request!");
+    });
 }

@@ -8,6 +8,7 @@
     border-radius: 5px;
     background-color: lightblue;
     overflow: auto;
+    
 }
 
 .wrapper-head{
@@ -15,8 +16,10 @@
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     background-color: steelblue;
-    height: 50px;
+    height: 30px;
+    padding-top: 15px;
     font-size: large;
+    font-family: sans-serif;
 }
 /* Wrapper End */
 

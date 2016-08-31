@@ -1,10 +1,10 @@
 //including libraries
-var express = require('express');                       //middleware framework
-var https = require('https');                           //https library
-var http = require('http');                             //http library
-var bodyParser = require('body-parser');                //library to parse HTTP bodies
-var fs = require('fs');                                 //filestream library
-var data = require('./data/data.js');                   //loads mocking data
+var express = require('express');
+var https = require('https');
+var http = require('http');
+var bodyParser = require('body-parser');
+var fs = require('fs');
+var data = require('./data/data.js');
 
 //loading server key and certificate to 
 //establish TLS connections later on
@@ -33,10 +33,6 @@ app.use(bodyParser.urlencoded({     // URL-encoded bodies
   extended: true
 })); 
 
-/*
-*   declaring routes
-*
-*/
 app.get('/user',function (req,res) {
     res.send(data.user);
 })
@@ -61,7 +57,7 @@ app.post('/todo', function(req,res){
     }
     data.todo = data.addTodo(data.todo,todo);
     console.log(req.body.title);
-    res.send('Todo Added');
+    res.send(data.todo);
 })
 
 

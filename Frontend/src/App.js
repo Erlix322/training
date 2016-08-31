@@ -11,12 +11,13 @@ class App extends Component {
         data: null
     }
   }
-
   
   componentDidMount() {
     fetchJson('/todo').then((todos) =>
         this.setState({data:todos})
-    );
+    ).catch((e) => {
+      console.log("huhu"+e);
+    })
   }
   
   render() {
@@ -30,7 +31,9 @@ class App extends Component {
           <h2>Todo as a Service</h2>
         </div>       
         {data}
+      
       </div>
+     
     );
   }
 }
